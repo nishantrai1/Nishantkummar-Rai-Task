@@ -1,0 +1,19 @@
+/*
+  Localizable.strings
+  Nishantkumar Rai Task
+
+  Created by Nishant Rai on 14/12/24.
+  
+*/
+
+"netQty" = "NET QTY: ";
+"ltp" = "LTP: ";
+"p&l" = "P&L: ";
+"rupee" = "₹";
+"holdingsTitle" = "Portfolio";
+"currentValue" = "Current Value";
+"totalInvestment" = "Total investment";
+"todayPNL" = "Today's Profit & Loss";
+"pnl" = "Profit & Loss";
+"apiErrorUnableToFetchYourHoldings" = "Unable to fetch your holdings. Please try again in soometime!";
+
