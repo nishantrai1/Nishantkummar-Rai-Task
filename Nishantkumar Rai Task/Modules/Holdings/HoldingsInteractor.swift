@@ -48,7 +48,9 @@ class HoldingsInteractor: HoldingsInteractorProtocol {
             }
             do {
                 let decodedHoldings = try JSONDecoder().decode(HoldingsEntities.self, from: data)
-                coreDataService.save(data: decodedHoldings.data.userHolding)
+                DispatchQueue.global(qos: .background).async {
+                    self.coreDataService.save(data: decodedHoldings.data.userHolding)
+                }
                 getHoldingsSummary(decodedHoldings.data.userHolding)
                 self.presenter?.didFetchHoldings(holdings: decodedHoldings.data.userHolding)
             } catch {
